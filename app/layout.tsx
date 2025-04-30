@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Mona_Sans } from "next/font/google";
 import "./globals.css";
-import { BackgroundLines } from "@/components/ui/background-lines";
 import { Toaster } from "sonner";
 
 const monaSans = Mona_Sans({
