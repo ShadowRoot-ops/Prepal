@@ -24,13 +24,7 @@ const authFormSchema = (type: FormType) => {
   });
 };
 
-const AuthForm = ({
-  type,
-  className,
-}: {
-  type: FormType;
-  className?: string;
-}) => {
+const AuthForm = ({ type }: { type: FormType; className?: string }) => {
   const router = useRouter();
   const formSchema = authFormSchema(type);
   const form = useForm<z.infer<typeof formSchema>>({
